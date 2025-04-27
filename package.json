@@ -37,7 +37,7 @@
     "devDependencies": {
         "@rslib/core": "^0.6.0",
         "@types/node": "^22.14.1",
-        "knip": "^5.46.3",
+        "knip": "^5.50.5",
         "typescript": "^5.8.3"
     },
     "keywords": [

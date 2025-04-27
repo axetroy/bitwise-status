@@ -1,11 +1,14 @@
-import { defineConfig } from "@rslib/core";
 import fs from "node:fs";
 import path from "node:path";
-import type { Compiler } from "@rspack/core";
+import { defineConfig } from "@rslib/core";
 
 class RspackDtsCopyPlugin {
-	apply(compiler: Compiler) {
-		const projectDir = __dirname;
+	/**
+	 *
+	 * @param {import('@rspack/core').Compiler} compiler
+	 */
+	apply(compiler) {
+		const projectDir = compiler.context;
 
 		compiler.hooks.emit.tapPromise("RspackDtsCopyPlugin", async (compilation) => {
 			const target = path.join(projectDir, "src/index.d.ts");
