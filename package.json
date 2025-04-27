@@ -44,12 +44,12 @@
         "bitwise",
         "status"
     ],
-    "homepage": "https://github.com/axetroy/babel-transform-webpack-plugin#readme",
+    "homepage": "https://github.com/axetroy/bitwise-status#readme",
     "bugs": {
-        "url": "https://github.com/axetroy/babel-transform-webpack-plugin/issues"
+        "url": "https://github.com/axetroy/bitwise-status/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/axetroy/babel-transform-webpack-plugin.git"
+        "url": "git+https://github.com/axetroy/bitwise-status.git"
     }
 }
