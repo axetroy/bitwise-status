@@ -33,7 +33,7 @@ const STATUS_READ = 1 << 1; // 2
 const STATUS_WRITE = 1 << 2; // 4
 const STATUS_DOWNLOAD = 1 << 3; // 8
 
-addStatus(STATUS_NONE, STATUS_READ); // 2
+addStatus(STATUS_NONE, STATUS_READ); // 3
 addStatus(STATUS_READ, STATUS_WRITE); // 6
 addStatus(STATUS_WRITE, STATUS_DOWNLOAD); // 12
 
