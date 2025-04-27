@@ -1,0 +1,30 @@
+exports[`test cjs output 1`] = `
+
+> cjs@1.0.0 test
+> node index.cjs
+
+{
+  addStatus: [Function: addStatus],
+  default: {
+    hasStatus: [Function: hasStatus],
+    addStatus: [Function: addStatus],
+    removeStatus: [Function: removeStatus]
+  },
+  hasStatus: [Function: hasStatus],
+  removeStatus: [Function: removeStatus]
+}
+
+`;
+
+exports[`test esm output 1`] = `
+
+> esm@1.0.0 test
+> node index.mjs
+
+{
+  hasStatus: [Function: hasStatus],
+  addStatus: [Function: addStatus],
+  removeStatus: [Function: removeStatus]
+}
+
+`;
