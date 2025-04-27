@@ -18,11 +18,11 @@
 		".": {
 			"require": {
 				"default": "./dist/cjs/index.cjs",
-				"types": "./dist/cjs/index.d.cts"
+				"types": "./dist/cjs/index.d.ts"
 			},
 			"import": {
 				"default": "./dist/esm/index.mjs",
-				"types": "./dist/esm/index.d.mts"
+				"types": "./dist/esm/index.d.ts"
 			}
 		}
 	},
