@@ -250,6 +250,11 @@ argparse@^2.0.1:
   resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
   integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
 
+bitwise.js@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/bitwise.js/-/bitwise.js-1.0.3.tgz#be7d9ca086c510f74aa29abbf7472fc1dcdb4ad9"
+  integrity sha512-RNTuTPdEEN1SECZMte1HTxao2ko5WL3W6fsdF51xfQUVFR7M/zKnyYGqZDEWVi2Hui/zykHT6KneMWCJMwZWGA==
+
 braces@^3.0.3:
   version "3.0.3"
   resolved "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz#490332f40919452272d55a8480adc0c441358789"

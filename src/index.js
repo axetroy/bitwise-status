@@ -1,4 +1,4 @@
-const ERROR_NOT_SAME_TYPE = new TypeError("Invalid type, currentStatus and targetStatus must be the same type");
+import { bitwise } from "bitwise.js";
 
 /**
  * 判断是否处于某个状态下
@@ -7,13 +7,9 @@ const ERROR_NOT_SAME_TYPE = new TypeError("Invalid type, currentStatus and targe
  * @returns {boolean}
  */
 function hasStatus(currentStatus, targetStatus) {
-	if (typeof currentStatus !== typeof targetStatus) {
-		throw ERROR_NOT_SAME_TYPE;
-	}
-	if (typeof currentStatus === "bigint") {
-		return (currentStatus & targetStatus) !== 0n;
-	}
-	return (currentStatus & targetStatus) > 0;
+	const result = bitwise.and(currentStatus, targetStatus);
+
+	return Number(result) > 0;
 }
 
 /**
@@ -23,10 +19,7 @@ function hasStatus(currentStatus, targetStatus) {
  * @returns {number|bigint}
  */
 function addStatus(currentStatus, targetStatus) {
-	if (typeof currentStatus !== typeof targetStatus) {
-		throw ERROR_NOT_SAME_TYPE;
-	}
-	return currentStatus | targetStatus;
+	return bitwise.or(currentStatus, targetStatus);
 }
 
 /**
@@ -36,13 +29,7 @@ function addStatus(currentStatus, targetStatus) {
  * @returns {number|bigint}
  */
 function removeStatus(currentStatus, removedStatus) {
-	if (typeof currentStatus !== typeof removedStatus) {
-		throw ERROR_NOT_SAME_TYPE;
-	}
-	if (typeof currentStatus === "bigint") {
-		return currentStatus & ~removedStatus;
-	}
-	return currentStatus & ~removedStatus;
+	return bitwise.and(currentStatus, bitwise.not(removedStatus));
 }
 
 export { hasStatus, addStatus, removeStatus };

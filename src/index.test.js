@@ -35,40 +35,4 @@ describe("bitwise-status", () => {
 			assert.equal(removeStatus(0b1110n, 0b0100n), 0b1010n);
 		});
 	});
-
-	describe("invalid type error", () => {
-		test("hasStatus", () => {
-			assert.throws(
-				() => {
-					hasStatus(1, 1n);
-				},
-				{
-					name: "TypeError",
-					message: "Invalid type, currentStatus and targetStatus must be the same type",
-				}
-			);
-		});
-		test("addStatus", () => {
-			assert.throws(
-				() => {
-					addStatus(1, 1n);
-				},
-				{
-					name: "TypeError",
-					message: "Invalid type, currentStatus and targetStatus must be the same type",
-				}
-			);
-		});
-		test("removeStatus", () => {
-			assert.throws(
-				() => {
-					removeStatus(1, 1n);
-				},
-				{
-					name: "TypeError",
-					message: "Invalid type, currentStatus and targetStatus must be the same type",
-				}
-			);
-		});
-	});
 });
