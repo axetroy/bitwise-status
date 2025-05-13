@@ -53,6 +53,6 @@
         "url": "git+https://github.com/axetroy/bitwise-status.git"
     },
     "dependencies": {
-        "bitwise.js": "^1.0.3"
+        "bitwise.js": "^1.0.5"
     }
 }
