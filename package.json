@@ -1,6 +1,6 @@
 {
     "name": "bitwise-status",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "private": false,
     "description": "A library for bitwise status management in JavaScript.",
     "sideEffects": false,
