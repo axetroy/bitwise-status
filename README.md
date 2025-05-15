@@ -26,7 +26,7 @@ const { hasStatus } = require("bitwise-status");
 ```
 
 ```js
-const { addStatus, hasStatus, removeStatus } = require("bitwise-status");
+import { addStatus, hasStatus, removeStatus } from "bitwise-status";
 
 const STATUS_NONE = 1 < 0; // 1
 const STATUS_READ = 1 << 1; // 2
