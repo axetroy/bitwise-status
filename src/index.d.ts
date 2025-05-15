@@ -29,7 +29,7 @@ declare function hasStatus<T extends number | bigint>(currentStatus: T, targetSt
  * console.log(currentStatus) // 15
  * ```
  */
-declare function addStatus<T extends number | bigint>(currentStatus: T, targetStatus: T): T;
+declare function addStatus<T extends number | bigint>(currentStatus: T, targetStatus: T): T extends bigint ? bigint : number;
 
 /**
  * 添加状态
@@ -48,6 +48,6 @@ declare function addStatus<T extends number | bigint>(currentStatus: T, targetSt
  * console.log(currentStatus) // 0
  * ```
  */
-declare function removeStatus<T extends number | bigint>(currentStatus: T, removedStatus: T): T;
+declare function removeStatus<T extends number | bigint>(currentStatus: T, removedStatus: T): T extends bigint ? bigint : number;
 
 export { addStatus, hasStatus, removeStatus };
